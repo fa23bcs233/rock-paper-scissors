@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <main>
+
+        <section id="controls-container">
+            <button id="rock" data-value="rock">Rock</button>
+            <button id="paper" data-value="paper">Paper</button>
+            <button id="paper" data-value="scissors">Scissors</button>
+        </section>
+
+        <section id="result-container">
+            <span id="round-result" data-status="null">Choose An Option to start the game.</span>
+            <div class="score-board">
+                <div>
+                    <h2>Your Score</h2>
+                    <strong id="human-score">0</strong>
+                </div>
+                <div>
+                    <h2>Computer's Score</h2>
+                    <strong id="Computer-score">0</strong>
+                </div>
+            </div>
+        </section>
+
+        <section id="container">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th>Your Choice</th>
+                        <th>Computer's Choice</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="result-stack">
+                    <tr>
+                        <td>Rock</td>
+                        <td>Scissors</td>
+                        <td data-status="lose">Loose</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+    </main>
 </body>
+
 </html>
